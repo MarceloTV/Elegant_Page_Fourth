@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky High</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0694e6e7c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Sky High</h2>
+            <nav>
+                <a href="#">Package</a>
+                <a href="#">Destination</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-regular fa-circle-user"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="intro">
+            <h1>Tokyo, Japan</h1>
+            
+            <div class="options">
+
+                <div class="city_one">
+                    <select id="city1">
+                        <option value="los_angeles">Los Angeles</option>
+                        <option value="boston">Boston</option>
+                        <option value="new_york">New York</option>
+                    </select>
+                </div>
+
+                <div class="city_two">
+                    <select id="city2">
+                        <option value="los_angeles">Tokyo</option>
+                        <option value="boston">Hong Kong</option>
+                        <option value="seoul">Seoul</option>                        
+                    </select>
+                </div>
+
+                <div class="date_one">
+                    <input type="text" id="date1" readonly value="03.01.2022">
+                    <label for="date1">
+                        <i class="fa-solid fa-calendar"></i>
+                    </label>
+                </div>
+
+                <div class="date_two">
+                    <input type="text" id="date2" readonly value="03.01.2022">
+                    <label for="date2">
+                        <i class="fa-solid fa-calendar"></i>
+                    </label>
+                </div>
+
+                <div class="people">
+                    <select>
+                        <option value="">2 Adults</option>
+                        <option value="">1 Adult</option>
+                    </select>
+                </div>
+
+                <button class="btn">
+                    Search
+                </button>
+            </div>
+
+        </div>
+
+        <main>
+            <article class="special_offers">
+
+                <div class="text">
+                    <h2>Special Offers</h2>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="offers">
+
+                    <div class="offer hong_kong">
+                        <img src="./img/places/harbour_hongkong.jpg" alt="place">
+                        <h4>Hong Kong, Hong Kong</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Hyatt Centric Victoria...</p>
+                        <h3>$557</h3>
+                    </div>
+
+                    <div class="offer tokyo">
+                        <img src="./img/places/tokyo_hotel.jpg" alt="place">
+                        <h4>Tokyo, Japan</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Hotel Sunroute Plaza...</p>
+                        <h3>$436</h3>
+                    </div>
+
+                    <div class="offer bangkook">
+                        <img src="./img/places/bangkook_place.jpg" alt="place">
+                        <h4>Bangkook, Thailand</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Bangkook Marriot Marquis...</p>
+                        <h3>$612</h3>
+                    </div>
+
+                    <div class="offer seoul">
+                        <img src="./img/places/seoul_place.jpg" alt="place">
+                        <h4>Seoul, South Korea</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>LOTTE City Hotel...</p>
+                        <h3>$505</h3>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="categories">
+                <div class="text">
+                    <h2>Categories</h2>
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="content">
+                    
+                    <div class="beach">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <h3>Beach</h3>
+                        <p>from $450</p>
+                    </div>
+
+                    <div class="city">
+                        <i class="fa-solid fa-city"></i>
+                        <h3>City</h3>
+                        <p>from $312</p>
+                    </div>
+
+                    <div class="health">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h3>Health</h3>
+                        <p>from $602</p>
+                    </div>
+
+                    <div class="ski">
+                        <i class="fa-solid fa-person-skiing"></i>
+                        <h3>Ski</h3>
+                        <p>from $558</p>
+                    </div>
+
+                    <div class="tour">
+                        <i class="fa-solid fa-torii-gate"></i>
+                        <h3>Tour</h3>
+                        <p>from $435</p>
+                    </div>
+
+                    <div class="adventure">
+                        <i class="fa-regular fa-compass"></i>
+                        <h3>Adventure</h3>
+                        <p>from $873</p>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
