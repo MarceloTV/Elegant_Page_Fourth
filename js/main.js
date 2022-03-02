@@ -1,5 +1,5 @@
 $(function(){
-    $("#date1").datepicker({
+    $("#date1, #date2").datepicker({
         dateFormat: "dd.mm.yy"
     });
 });
