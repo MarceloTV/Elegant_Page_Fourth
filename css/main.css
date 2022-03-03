@@ -14,6 +14,11 @@
   margin: auto;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 /*___HEADER___*/
 
 .container header {
@@ -364,6 +369,7 @@
   color: white;
   padding: 20px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .container .popular_destinations .content .hong_kong {
@@ -442,4 +448,169 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.container .blog .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.container .blog .text a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*__Slider__*/
+
+.glide {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.glide .glide__slide {
+  border-radius: 12px;
+  padding: 15px;
+  padding-top: 200px;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.glide .glide__slide--active {
+  transition: ease all 0.3s;
+  opacity: 1;
+}
+
+.glide .glide__slide h3 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.glide .glide__slide p {
+  font-weight: 100;
+}
+
+.slide1 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../img/blog/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../img/blog/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide3 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../img/blog/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide4 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../img/blog/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide5 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../img/blog/5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide6 {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../img/blog/6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*__FOOTER__*/
+
+footer .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+}
+
+footer .container .info h3,
+footer .container .info p {
+  margin-bottom: 20px;
+}
+
+footer .container .info .socials i {
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+footer .container .info .socials i:nth-child(4) {
+  margin-right: 0;
+}
+
+footer .container .menus {
+  display: flex;
+}
+
+footer .container .menus > div {
+  margin-right: 50px;
+}
+
+footer .container .menus > div:nth-child(3) {
+  margin-right: 0;
+}
+
+footer .container .menus div h4 {
+  margin-bottom: 20px;
+}
+
+footer .container .menus div nav a {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
 }
