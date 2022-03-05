@@ -87,6 +87,7 @@ html {
   backdrop-filter: blur(5px);
   border-radius: 32px;
   padding-left: 10px;
+  flex-wrap: wrap;
 }
 
 .container .intro .options > div {
@@ -614,4 +615,65 @@ footer .container .menus div nav a {
   margin-bottom: 20px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
+}
+
+/*__MOBILE_MENU__*/
+
+.mobile_menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  left: -100%;
+  transition: all ease 0.3s;
+}
+
+.mobile_menu .container {
+  width: 95%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.mobile_menu .container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mobile_menu .container .header i {
+  font-size: 1.5em;
+}
+
+.mobile_menu .container .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mobile_menu .container .icons i {
+  font-size: 2em;
+}
+
+.mobile_menu .container .icons i:nth-child(1) {
+  margin-right: 20px;
+}
+
+.mobile_menu .container nav a {
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.show {
+  transition: all ease 0.3s;
+  left: 0;
+}
+
+.line_break {
+  width: 100%;
 }

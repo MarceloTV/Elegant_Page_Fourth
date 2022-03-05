@@ -12,8 +12,28 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0694e6e7c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
 </head>
 <body>
+
+    <div class="mobile_menu" id="mobile_menu">
+        <div class="container">
+            <div class="header">
+                <h2>Sky High</h2>
+                <i class="fa-solid fa-x" id="close"></i>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+            <nav>
+                <a href="#">Package</a>
+                <a href="#">Destination</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+
     <div class="container">
         <header>
             <h2>Sky High</h2>
@@ -25,7 +45,7 @@
             <div class="icons">
                 <i class="fa-solid fa-location-dot"></i>
                 <i class="fa-regular fa-circle-user"></i>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="menu_show"></i>
             </div>
         </header>
 
